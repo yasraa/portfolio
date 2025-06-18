@@ -19,6 +19,7 @@ const pg1main = () => {
         height: "100vh",
         overflowY: "auto",
         position: "relative",
+        backgroundColor:"#222222c7",
       }}>
       
       <Navbar/>
