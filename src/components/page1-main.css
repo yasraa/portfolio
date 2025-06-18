@@ -224,7 +224,7 @@
   .education {
   background-color: #222222c7;;
     margin: 0px;
-    
+    width: 110vh;
   }
 
 }
@@ -542,7 +542,7 @@ form {
   }
 
   .slider-container {
-    height: 700px;
+    height: fit-content;
   }
 
   .slide {
