@@ -1,9 +1,31 @@
-import React from 'react';
+import React, { useState,useRef } from "react";
 import './page1-main.css';
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-const Reviews = () => {
+gsap.registerPlugin(ScrollTrigger);
+const Reviews = ({scrollContainer}) => {
+   const typeRef = useRef();
+ useGSAP(() => {
+    if (!scrollContainer?.current) return;
+
+    gsap.from(typeRef.current, {
+      opacity: 0,
+      y: 40,
+      duration: 2,
+      scrollTrigger: {
+        trigger: typeRef.current,
+        scroller: scrollContainer.current, // 👈 use the actual DOM element
+        start: "top 80%",
+        toggleActions: "play none none none",
+       
+      }
+    });
+  }, [scrollContainer]); // 👈 watch scrollContainer
+
   return (
-    <div name="reviews" className="review" id="section4">
+    <div name="reviews" className="review" id="section4"  ref={typeRef}>
       <div className="r-main">
         <div className="rhead">
         <h1>What I Can Do For You!</h1>

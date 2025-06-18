@@ -25,7 +25,7 @@ const typeRef = useRef();
         scroller: scrollContainer.current, // 👈 use the actual DOM element
         start: "top 80%",
         toggleActions: "play none none none",
-        markers: true,
+       
       }
     });
   }, [scrollContainer]);
