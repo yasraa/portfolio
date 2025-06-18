@@ -8,7 +8,7 @@ import FoodApp from './assets/food-2.png'
 import NoteApp from './assets/note-3.png'
 import EcomApp from './assets/ecom-2.png'
 import larrow from './assets/l.png'
-import rarrow from './assets/r.png'
+import rarrow from './assets/R.png'
 gsap.registerPlugin(ScrollTrigger);
 const Projects = ({scrollContainer}) => {
  const [activeDiv, setActiveDiv] = useState(1);
