@@ -1,0 +1,162 @@
+
+
+.sidesticky{
+    position: sticky; /* Makes the div sticky */
+    top: 0;           /* Keeps it at the top as you scroll */
+    height: 100vh;    /* Full viewport height */
+    padding-top: 4vh;
+    z-index: 10;   
+    width: 25vw;
+    display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  }
+
+
+.cardm {
+    height: 92vh;
+    color: rgb(248, 245, 250);
+  display: flex;
+  flex-direction: column;
+    background-color: #3c3b39;
+    width: 280px;
+    border-radius: 20px;
+    padding: 10px 29px;
+}
+
+.cardm h1 {
+    letter-spacing: 1.5px;
+    font-weight: 550;
+    line-height: 33px;
+font-size: 30px;
+}
+
+.name {
+   
+    padding-top: 17px;
+    padding-bottom: 9px;
+    line-height: 30px;
+}
+
+.cardm img {
+    height: 210px;
+    width: 100%;
+    border-radius: 20px;
+   
+    object-fit: cover;
+}
+
+.abt-me {
+ 
+    margin-top: 20px;
+   
+}
+
+.f-d {
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.h-5 {
+    margin-top: 20px;
+
+}
+
+.u-d {
+    font-size: 17px;
+}
+
+.c-d {
+    font-size: 13px;
+    margin-bottom: 33px;
+}
+
+.social-link ul {
+    display: flex;
+    list-style: none;
+  padding: 0 9px;
+     transition: transform 0.3s ease;
+    justify-content: space-between;
+    justify-items: center;
+    margin-bottom: 17px;
+    height: 36px;
+    align-items: end;
+}
+.social-link ul a:hover {
+  transform: translateY(-5px); /* Moves the button upward by 5px */
+}
+
+
+
+
+
+
+
+.btn-card {
+    background: rgb(240, 210, 249);
+    background: linear-gradient(90deg, rgba(240, 210, 249, 1) 27%, rgba(255, 209, 244, 1) 54%, rgba(213, 220, 255, 1) 100%);
+    border: none;
+    width: 100%;
+    height: 37px;
+    border-radius: 30px;
+    font-weight: 500;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+ 
+}
+.btn-card:hover{
+    cursor: pointer;
+    background-color: rgb(240, 210, 249);
+    background: linear-gradient(90deg, rgba(240, 210, 249, 1) 27%, rgb(154, 201, 255) 54%, rgba(213, 220, 255, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    border:1px solid rgb(240, 210, 249) ;
+    transition: all 0.5s ease;
+}
+
+.social-link{
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+   
+
+}
+
+@media (max-width:500px){
+    .sidesticky{
+        position: relative;
+        padding-top: 0px;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cardm{
+        margin-left: 0px;
+        height: 75vh;
+        margin-bottom: 0px;
+        margin-top: 40px;
+        width: 70vw;
+    }
+    .cardm h1{
+        font-size: 2.8rem;
+        line-height: 45px;
+        letter-spacing: 2.5px;
+    }
+    .cardm img{
+        height: 245px;
+    }
+    .abt-me {
+       font-size: 1.2rem;
+    }
+    .social-link {
+        margin-top: 20px;
+    }
+}
