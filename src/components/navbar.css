@@ -85,8 +85,10 @@
   }
   
   .side-bar.active {
-    transform: translateX(0);
-  }
+  display: flex;
+  transform: translateX(0);
+  z-index: 999; /* Now on top */
+}
   
   .side-bar .close-btn {
     align-self: flex-end;
@@ -136,11 +138,7 @@
         padding: 0px;
         border-bottom-left-radius: 20px;
 
-    }.side-bar.active {
-  display: flex;
-  transform: translateX(0);
-  z-index: 999; /* Now on top */
-}
+    }
     .btn-nav{
      font-size: 20px;
         width: 119px;
