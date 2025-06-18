@@ -87,7 +87,7 @@
   .side-bar.active {
   display: flex;
   transform: translateX(0);
-  z-index: 999; /* Now on top */
+  z-index: 9999; /* Now on top */
 }
   
   .side-bar .close-btn {
@@ -123,7 +123,7 @@
   .navbar{
     left: -6px;
             margin-top: 8px;
-           height: 367px;
+          
   }
     .ham-img {
       display: block;
