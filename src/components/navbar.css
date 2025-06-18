@@ -131,12 +131,15 @@
     .side-bar {
       display: flex;
       height: 351px;
-       z-index: 999;
+       z-index: 9999;
         width: 39vw;
         padding: 0px;
         border-bottom-left-radius: 20px;
 
     }
+     .side-bar {
+  z-index: 9999;
+     }
     .btn-nav{
      font-size: 20px;
         width: 119px;
