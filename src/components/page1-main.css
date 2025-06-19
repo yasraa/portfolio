@@ -88,19 +88,24 @@
   .main-para {
     font-size: 42px;
     margin-top: 0px;
-    padding-top: 129px;
+    padding-top: 0px;
     width: 369px;
+    margin-left: 0px;
   }
 
   .main-btn {
-    margin-left: 25px;
+    margin-left: 0px;
   }
 
   .about-me p {
     width: 82%;
-    margin-left: 24px;
+    margin-left:0px;
     font-size: 19px;
-    margin-top: 24px;
+    
+  }
+  .about-me {
+    height: fit-content;
+    padding: 30px 30px;
   }
 
 
@@ -213,9 +218,9 @@
 
   .main-btn {
     height: 52px;
-    margin-left: 22px;
+    margin-left: 0px;
     font-size: 20px;
-    width: 213px;
+    width: 205px;
   }
 
   .education {

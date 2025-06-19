@@ -49,6 +49,7 @@ font-size: 30px;
 }
 
 .abt-me {
+    padding-top: 10px;
  height: fit-content;
   
    display: flex;
