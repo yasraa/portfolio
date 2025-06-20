@@ -88,13 +88,16 @@
   .main-para {
     font-size: 42px;
     margin-top: 0px;
-    padding-top: 0px;
+    padding-top: 40px;
     width: fit-content;
     margin-left: 0px;
   }
 
   .main-btn {
-    margin-left: 0px;
+           height: 41px;
+        margin-left: 0px;
+        font-size: 18px;
+        width: 178px;
   }
 
   .about-me p {
@@ -105,7 +108,7 @@
   }
   .about-me {
     height: fit-content;
-    padding: 30px 30px;
+    padding: 0px 30px 30px 30px;
   }
 
 
@@ -226,14 +229,14 @@ align-items: center;
   }
 
   .main-btn {
-    height: 52px;
-    margin-left: 0px;
-    font-size: 20px;
-    width: 205px;
+           height: 41px;
+        margin-left: 0px;
+        font-size: 18px;
+        width: 178px;
   }
 
   .education {
- padding-top: 0px;
+ padding-top: 20px;
     margin: 0px;
     height: fit-content;
     width: 100vw;
