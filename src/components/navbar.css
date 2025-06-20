@@ -124,7 +124,10 @@
   display: none;
   }
     .ham-img {
-      display: block;
+           position: relative;
+        top: 15px;
+        display: inline-block;
+        left: 261px;
 
     }
   

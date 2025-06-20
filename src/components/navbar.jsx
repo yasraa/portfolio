@@ -64,15 +64,10 @@ const Navbar = () => {
         <button className="btn-nav" onClick={() => scrollToSection("section5")}>
           Let's talk
         </button>
-
-        {/* Sidebar for mobile */}
-
-
-
-
-
-
       </nav>
+       <button className="btn-nav" onClick={() => scrollToSection("section5")}>
+          Let's talk
+        </button>
               <div className={`side-bar ${isSidebarVisible ? "active" : ""}`}>
           <button onClick={hideSidebar} className="close-btn">
             <img src={crossImg} alt="Close" />
