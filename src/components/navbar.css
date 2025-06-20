@@ -128,7 +128,7 @@
         top: 15px;
         display: inline-block;
         left: 261px;
-
+z-index: 999;
     }
   
     .side-bar {
