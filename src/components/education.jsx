@@ -52,7 +52,7 @@ function Education({scrollContainer}) {
     { id: 1, url: nodeimg, title: "Node JS", style: { width: '89%'}, per:'89%'},
     { id: 2, url: expressimg, title: "Express" ,style: { width: '85%'}, per:'85%'},
     { id: 3, url: mongodbimg, title: "Mongo DB" ,style: { width: '75%'}, per:'75%'},
-    { id: 4, url: gsappimg, title: "Gsapp" ,style: { width: '65%'}, per:'65%'},
+   
    
   ];
 
@@ -80,6 +80,11 @@ function Education({scrollContainer}) {
           }}
         >
           <div className="slide">
+ <div className="responsive-heading-tech">
+            What I Craft With
+          </div>
+
+
             <div className="ainer">
             {imageData.map((image) => (
               <div key={image.id} style={{
@@ -101,25 +106,27 @@ function Education({scrollContainer}) {
               </div>
             ))}
             </div>
+
+
+
+
           </div>
           <div className="slide">
+            <div className="responsive-heading-tech2">
+              What Powers It
+            </div>
+
+
            <div className="ainer">
             {twoimageData.map((image) => (
               <div key={image.id} style={{
-                width:"fit-content",
+                display:"flex",
+                justifyContent:"center"
               }}>
-                <div className="kkj" style={{
-                  width:"fit-content",
-                  padding:"0px 10px"}}>
-                <img src={image.url} alt={image.title} className="devimg"style={{
-                  width: "fit-content",
-                }} />
-                <p style={{
-                  width: "100%",
-                }}>{image.title} </p>
-                <div className="bar"style={{
-                  width: "100%",
-                }}><div className="prog-bar">
+                <div className="kkj">
+                <img src={image.url} alt={image.title} className="devimg" />
+                <p>{image.title}</p>
+                <div className="bar"><div className="prog-bar">
                 <div className="main-progbar"
                           style={{
                             width: image.style.width, // Set width dynamically based on imageData
@@ -131,6 +138,9 @@ function Education({scrollContainer}) {
               </div>
             ))}
             </div>
+
+
+
           </div>
         </div>
       </div>

@@ -197,13 +197,17 @@
 
 @media (max-width: 600px) {
   .ainer {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     width: 100vw;
     row-gap: 29px;
     padding: 10px 30px;
   }
+
 .button-container{
   padding: 20px 24px;
+}
+.bar{
+  display: none;
 }
   .kkj p {
     margin: 0px;
@@ -256,8 +260,20 @@
 
 }
 
-
-
+.responsive-heading-tech{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.responsive-heading-tech2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 
 .jjk {
   display: flex;
@@ -548,8 +564,10 @@ form {
   }
 
   .slide {
+    width: 100vw;
     height: 100%;
     display: flex;
+    flex-direction: column;
   }
 
   .review {
@@ -568,7 +586,9 @@ form {
   .sides{
     padding: 20px 40px;
   }
-
+.slider{
+  display: block;
+}
   .sides .box {
     height: fit-content;
     margin-bottom: 0px;
@@ -696,9 +716,9 @@ gap: 5px;
 flex-wrap: wrap;
 }
 .proj-container {
-width: 930px;
-    height: 462px;
-  overflow: hidden;
+width: 100%;
+    height:fit-content;
+ 
 
   margin-left: 20px;
 }
@@ -712,7 +732,7 @@ width: 930px;
 .proj-ainer{
     width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   text-align: center;
   padding: 10px;
@@ -735,7 +755,7 @@ width: 930px;
   display: flex;
   justify-content: right;
   width: 90%;
- 
+ margin-top: 20px;
 }
 
 .proj-jjk button{
@@ -751,6 +771,20 @@ width: 930px;
 padding: 20px;
  
   
+}
+.bar{
+  display: none;
+}
+.devimg{
+  width: 60px;
+  height: 60px;
+}
+.kkj{
+background-color: #f0d2f959;
+height: 103px;
+  width: 100px;
+  padding: 11px 13px;
+  border-radius: 20px;
 }
 .proj-main-headin{
  margin-top: 0px;
@@ -774,7 +808,9 @@ width: 100%;
   margin-bottom: 25px;
   margin-left: 20px;
 }
-
+  .jjk{
+    display: none;
+  }
 
 .proj-slider {
   display: block;
