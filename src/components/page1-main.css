@@ -589,10 +589,12 @@ form {
     align-items: center;
     padding: 40px 33px;
   }
-
+.contact{
+  height: 110vh;
+  padding-top: 20px;
+}
   .contact p {
     font-size: 37px;
-
     padding: 16px 38px;
   }
 
@@ -615,13 +617,15 @@ form {
 }
   .r-main {
     margin-top: 20px;
+    padding-top: 0px;
   }
 
   .r-main h1 {
     padding-bottom: 0px;
+    width: fit-content;
   }
   .sides{
-    padding: 20px 40px;
+    padding: 0px 40px;
   }
 .slider{
   display: block;
