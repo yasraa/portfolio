@@ -65,7 +65,7 @@ const Navbar = () => {
           Let's talk
         </button>
       </nav>
-       <button className="btn-nav" onClick={() => scrollToSection("section5")}>
+       <button className="hidden-btn-nav" onClick={() => scrollToSection("section5")}>
           Let's talk
         </button>
               <div className={`side-bar ${isSidebarVisible ? "active" : ""}`}>
