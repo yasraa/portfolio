@@ -127,7 +127,8 @@
            position: fixed;
         top: 15px;
         display: inline-block;
-        left: 261px;
+        right: 0;
+        padding: 10px;
 z-index: 99;
     }
   
