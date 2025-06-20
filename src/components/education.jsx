@@ -71,6 +71,11 @@ function Education({scrollContainer}) {
           }}>What Powers It</button>
           </div>
       </div>
+      <div className="tech-para">
+        <p>
+          I build sleek, responsive websites using modern front-end and back-end tools. Here’s what I build with daily.
+        </p>
+      </div>
 
       <div className="slider-container">
         <div
@@ -81,7 +86,7 @@ function Education({scrollContainer}) {
         >
           <div className="slide">
  <div className="responsive-heading-tech">
-            What I Craft With
+            What I Craft With!
           </div>
 
 
@@ -113,7 +118,7 @@ function Education({scrollContainer}) {
           </div>
           <div className="slide">
             <div className="responsive-heading-tech2">
-              What Powers It
+              What Powers It!
             </div>
 
 

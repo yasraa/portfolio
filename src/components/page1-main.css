@@ -201,10 +201,14 @@
     width: 100vw;
     row-gap: 29px;
     padding: 10px 30px;
+    column-gap: 2px;
   }
 
 .button-container{
-  padding: 20px 24px;
+  width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .bar{
   display: none;
@@ -230,7 +234,8 @@
   .education {
  padding-top: 0px;
     margin: 0px;
-    height: 110vh;
+    height: fit-content;
+    width: 100vw;
   }
 
 }
@@ -259,22 +264,53 @@
 
 
 }
-
+.responsive-heading-tech{
+  display: none;
+}
+.responsive-heading-tech2{
+  display: none;
+}
+.tech-para{
+display: none;
+}
+@media (max-width: 600px){
 .responsive-heading-tech{
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
- 
+ color: rgba(213, 220, 255, 1);
+ font-size: 28px;
+ font-weight: lighter;
+ margin-bottom: 10px;
 }
 .responsive-heading-tech2{
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+   color: rgba(213, 220, 255, 1);
+ font-size: 28px;
+ font-weight: lighter;
+  margin: 10px 0px;
 }
-
+.tech-para{
+   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(240, 210, 249);
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.tech-para p{
+  width: 90%;
+  text-align: center;
+  margin: 0px;
+  line-height: 1.4;
+}
+}
 .jjk {
   display: flex;
   width: 337px;
