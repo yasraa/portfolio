@@ -89,7 +89,7 @@
     font-size: 42px;
     margin-top: 0px;
     padding-top: 0px;
-    width: 369px;
+    width: fit-content;
     margin-left: 0px;
   }
 
@@ -98,7 +98,7 @@
   }
 
   .about-me p {
-    width: 82%;
+    width: 90%;
     margin-left:0px;
     font-size: 19px;
     
@@ -210,6 +210,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+
 .bar{
   display: none;
 }
@@ -280,9 +281,9 @@ display: none;
   justify-content: center;
   align-items: center;
  color: rgba(213, 220, 255, 1);
- font-size: 28px;
+ font-size: 25px;
  font-weight: lighter;
- margin-bottom: 10px;
+ margin: 13px 0px;
 }
 .responsive-heading-tech2{
   width: 100%;
@@ -290,9 +291,9 @@ display: none;
   justify-content: center;
   align-items: center;
    color: rgba(213, 220, 255, 1);
- font-size: 28px;
+ font-size: 25px;
  font-weight: lighter;
-  margin: 10px 0px;
+  margin: 13px 0px;
 }
 .tech-para{
    width: 100%;
@@ -302,7 +303,7 @@ display: none;
   color: rgb(240, 210, 249);
   font-size: 20px;
   font-weight: 100;
-  margin-bottom: 10px;
+ 
 }
 .tech-para p{
   width: 90%;
@@ -808,6 +809,9 @@ padding: 20px;
  
   
 }
+.button-container h1{
+  width: fit-content;
+}
 .bar{
   display: none;
 }
@@ -824,6 +828,10 @@ height: 103px;
 }
 .proj-main-headin{
  margin-top: 0px;
+ display: flex
+;
+        justify-content: center;
+        width: 100%;
 }
 
 .proj-box {
