@@ -44,7 +44,7 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div >
       <nav className="navbar">
         <ul className="nav-list">
           <li>

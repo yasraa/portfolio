@@ -124,10 +124,10 @@
   display: none;
   }
     .ham-img {
-           position: relative;
+           position: fixed;
         top: 15px;
         display: inline-block;
-        left: 261px;
+        left: 382px;
 
     }
   
@@ -141,6 +141,10 @@
 
     }
     .btn-nav{
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      z-index: 999;
      font-size: 20px;
         width: 110px;
         height: 33px;

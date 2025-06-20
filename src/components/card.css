@@ -168,5 +168,6 @@ font-size: 30px;
     }
     .social-link {
         margin-top: 20px;
+        height: max-content;
     }
 }
