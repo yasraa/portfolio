@@ -66,7 +66,14 @@ const Navbar = () => {
         </button>
 
         {/* Sidebar for mobile */}
-        <div className={`side-bar ${isSidebarVisible ? "active" : ""}`}>
+
+
+
+
+
+
+      </nav>
+              <div className={`side-bar ${isSidebarVisible ? "active" : ""}`}>
           <button onClick={hideSidebar} className="close-btn">
             <img src={crossImg} alt="Close" />
           </button>
@@ -90,7 +97,6 @@ const Navbar = () => {
         <div onClick={showSidebar} className="ham-img">
           <img src={hamImg} alt="Menu" width={30} />
         </div>
-      </nav>
     </div>
   );
 };

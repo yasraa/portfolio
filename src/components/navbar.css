@@ -121,9 +121,7 @@
       display: none;
     }
   .navbar{
-    left: -6px;
-        
-           height: 367px;
+  display: none;
   }
     .ham-img {
       display: block;
