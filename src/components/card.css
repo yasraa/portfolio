@@ -152,7 +152,7 @@ font-size: 30px;
     }
     .cardm{
         margin-left: 0px;
-      height: 87%;
+      height: fit-content;
         margin-bottom: 0px;
 
     }
