@@ -24,7 +24,7 @@ const Projects = ({ scrollContainer }) => {
       return;
     }
 
-    // Add a slight delay to allow layout stabilization
+    // Slight delay to allow layout to stabilize
     setTimeout(() => {
       gsap.from(sectionRef.current, {
         scrollTrigger: {
@@ -54,6 +54,7 @@ const Projects = ({ scrollContainer }) => {
           {/* Slide 1 */}
           <div className="proj-slide">
             <div className="proj-ainer">
+              {/* Note App */}
               <div className="proj-box">
                 <div
                   className="proj-img"
@@ -64,21 +65,20 @@ const Projects = ({ scrollContainer }) => {
                   }}
                 >
                   <div className="project-card-btn">
-                    <a href="https://react-inote-app.netlify.app">Visit now</a>
-                    <a href="https://github.com/yasraa/react-notes-app-main">source code</a>
+                    <a href="https://react-inote-app.netlify.app" target='_blank'>Visit now</a>
+                    <a href="https://github.com/yasraa/react-notes-app-main" target='_blank'>Source Code</a>
                   </div>
                 </div>
                 <div className="proj-box-main-content">
                   <h3 className='proj-name'>React Note App</h3>
-                  <p className='proj-desc'>
-                    A personal productivity tool for managing notes. Users can create, delete, and archive notes with a clean, responsive UI.
-                  </p>
+                  <p className='proj-desc'>A personal productivity tool for managing notes. Users can create, delete, and archive notes with a clean, responsive UI.</p>
                   <div className="proj-labels">
-                    <label>React</label><label>CSS</label><label>JavaScript</label>
+                    <label>React</label> <label>CSS</label> <label>JavaScript</label>
                   </div>
                 </div>
               </div>
 
+              {/* E-commerce */}
               <div className="proj-box">
                 <div
                   className="proj-img"
@@ -89,17 +89,15 @@ const Projects = ({ scrollContainer }) => {
                   }}
                 >
                   <div className="project-card-btn">
-                    <a href="https://aroneshop.netlify.app">Visit now</a>
-                    <a href="https://github.com/yasraa/ecommerce-website">source code</a>
+                    <a href="https://aroneshop.netlify.app" target='_blank'>Visit now</a>
+                    <a href="https://github.com/yasraa/ecommerce-website" target='_blank'>Source Code</a>
                   </div>
                 </div>
                 <div className="proj-box-main-content">
                   <h3 className='proj-name'>E-commerce Website</h3>
-                  <p className='proj-desc'>
-                    A fully responsive e-commerce frontend with user-friendly popups, dropdowns, and search functionalities.
-                  </p>
+                  <p className='proj-desc'>A fully responsive e-commerce frontend with user-friendly popups, dropdowns, and search functionalities.</p>
                   <div className="proj-labels">
-                    <label>HTML</label><label>CSS</label><label>JavaScript</label>
+                    <label>HTML</label> <label>CSS</label> <label>JavaScript</label>
                   </div>
                 </div>
               </div>
@@ -109,6 +107,7 @@ const Projects = ({ scrollContainer }) => {
           {/* Slide 2 */}
           <div className="proj-slide">
             <div className="proj-ainer">
+              {/* Quiz App */}
               <div className="proj-box">
                 <div
                   className="proj-img"
@@ -119,22 +118,20 @@ const Projects = ({ scrollContainer }) => {
                   }}
                 >
                   <div className="project-card-btn">
-                    <a href="https://bertquiz.vercel.app/register">Visit now</a>
-                    <a href="https://github.com/yasraa/quiz-master">source code</a>
+                    <a href="https://bertquiz.vercel.app/register" target='_blank'>Visit now</a>
+                    <a href="https://github.com/yasraa/quiz-master" target='_blank'>Source Code</a>
                   </div>
                 </div>
                 <div className="proj-box-main-content">
                   <h3 className='proj-name'>React Quiz App</h3>
-                  <p className='proj-desc'>
-                    A quiz app with auth, difficulty modes, timer-based questions, and instant feedback — built with Firebase and Zustand.
-                  </p>
+                  <p className='proj-desc'>An interactive quiz app with auth, difficulty levels, timers, and feedback — powered by Firebase and Zustand.</p>
                   <div className="proj-labels">
-                    <label>React</label><label>Firebase Auth</label><label>Router DOM</label>
-                    <label>Tailwind</label><label>Day.js</label><label>Framer Motion</label>
+                    <label>React</label> <label>Firebase</label> <label>Tailwind</label> <label>Zustand</label>
                   </div>
                 </div>
               </div>
 
+              {/* Restaurant App */}
               <div className="proj-box">
                 <div
                   className="proj-img"
@@ -145,17 +142,15 @@ const Projects = ({ scrollContainer }) => {
                   }}
                 >
                   <div className="project-card-btn">
-                    <a href="https://mern-stack-restaurant-reservation.vercel.app">Visit now</a>
-                    <a href="https://github.com/yasraa/MERN_STACK_RESTAURANT_RESERVATION-main">source code</a>
+                    <a href="https://mern-stack-restaurant-reservation.vercel.app" target='_blank'>Visit now</a>
+                    <a href="https://github.com/yasraa/MERN_STACK_RESTAURANT_RESERVATION-main" target='_blank'>Source Code</a>
                   </div>
                 </div>
                 <div className="proj-box-main-content">
                   <h3 className='proj-name'>Restaurant Reservation App</h3>
-                  <p className='proj-desc'>
-                    A full-stack restaurant system with table reservations, animated nav, and form handling powered by MongoDB.
-                  </p>
+                  <p className='proj-desc'>A full-stack restaurant reservation system with form handling and MongoDB integration.</p>
                   <div className="proj-labels">
-                    <label>React (Vite)</label><label>Node.js</label><label>MongoDB</label>
+                    <label>React</label> <label>Node.js</label> <label>MongoDB</label>
                   </div>
                 </div>
               </div>
@@ -164,14 +159,14 @@ const Projects = ({ scrollContainer }) => {
         </div>
       </div>
 
-      {/* Navigation Arrows */}
+      {/* Slider Buttons */}
       <div className="proj-button-container">
         <div className="proj-jjk">
           <button onClick={() => setActiveDiv(1)}>
-            <BsArrowLeft className="arrows" />
+            <BsArrowLeft className='arrows' />
           </button>
           <button onClick={() => setActiveDiv(2)}>
-            <BsArrowRight className="arrows" />
+            <BsArrowRight className='arrows' />
           </button>
         </div>
       </div>
