@@ -1,31 +1,38 @@
-import React, { useState,useRef } from "react";
+import React, { useState,useRef ,useEffect} from "react";
 import './page1-main.css';
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
-const Reviews = ({scrollContainer}) => {
-   const typeRef = useRef();
- useGSAP(() => {
-    if (!scrollContainer?.current) return;
 
-    gsap.from(typeRef.current, {
-      opacity: 0,
-      y: 40,
-      duration: 2,
-      scrollTrigger: {
-        trigger: typeRef.current,
-        scroller: scrollContainer.current, // 👈 use the actual DOM element
-        start: "top 80%",
-        toggleActions: "play none none none",
-       
+const Reviews = ({scrollContainer}) => {
+  const sectionRef = useRef();
+  
+   useEffect(() => {
+      if (!scrollContainer?.current || !sectionRef.current) {
+        console.warn("❌ scrollContainer or sectionRef is undefined.");
+        return;
       }
-    });
-  }, [scrollContainer]); // 👈 watch scrollContainer
+  
+      // Defer animation until DOM is fully rendered
+      setTimeout(() => {
+        gsap.from(sectionRef.current, {
+          opacity: 0,
+          y: 50,
+          duration: 1.5,
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            scroller: scrollContainer.current,
+            start: 'top 80%',
+            toggleActions: 'play none none none',
+            // markers: true, // Enable only for debugging
+          }
+        });
+      }, 200);
+    }, [scrollContainer]);
 
   return (
-    <div name="reviews" className="review" id="section4"  ref={typeRef}>
+    <div name="reviews" className="review" id="section4"  ref={sectionRef}>
       <div className="r-main">
         <div className="rhead">
         <h1>What I Can Do For You!</h1>
