@@ -22,21 +22,23 @@ function Education({scrollContainer}) {
   const [activeDiv, setActiveDiv] = useState(1);
   const typeRef = useRef();
  useGSAP(() => {
-    if (!scrollContainer?.current) return;
+  if (!scrollContainer?.current) return;
 
+  setTimeout(() => {
     gsap.from(typeRef.current, {
+      scrollTrigger: {
+        trigger: typeRef.current,
+        scroller: scrollContainer.current,
+        start: 'top 80%',
+        toggleActions: 'play none none none',
+      },
       opacity: 0,
       y: 40,
       duration: 2,
-      scrollTrigger: {
-        trigger: typeRef.current,
-        scroller: scrollContainer.current, // 👈 use the actual DOM element
-        start: "top 80%",
-        toggleActions: "play none none none",
-       
-      }
     });
-  }, [scrollContainer]); // 👈 watch scrollContainer
+  }, 100); // wait a bit to ensure layout is ready
+}, [scrollContainer]);
+
 
   const imageData = [
     { id: 1, url: htmlImg, title: "HTML", style: { width: '95%'}, per:'95%'},

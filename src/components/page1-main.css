@@ -541,6 +541,7 @@ textarea {
   margin-bottom: 20px;
   padding: 8px 9px;
   width: 100%;
+  color: white;
 }
 
 form input,
@@ -551,6 +552,7 @@ textarea:focus {
 textarea {
   height: 40vh;
   padding: 9px;
+  color: white;
 }
 
 form {
@@ -732,6 +734,14 @@ width: 100%;
   font-size: 28px;
   
 }
+.arrows{
+  font-size: 40px;
+  color: #f0d2f994;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  stroke: #f0d2f994;
+  stroke-width: 2px;
+}
 .proj-desc{
  text-align: left;
  font-size: 15px;
@@ -774,6 +784,8 @@ width: 100%;
 
 .proj-slider {
   display: flex;
+  will-change: transform,opacity;
+  backface-visibility: hidden;
   transition: transform 0.5s ease-in-out;
   width: 200%;
 }
@@ -807,8 +819,8 @@ width: 100%;
 }
 
 .proj-jjk button{
-  width: 46px;
-    height: 39px;
+ background-color: transparent;
+ border: none;
     padding: 10px;
 }
 

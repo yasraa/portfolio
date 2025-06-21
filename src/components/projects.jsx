@@ -7,8 +7,9 @@ import QuizApp from './assets/quiz-2.png'
 import FoodApp from './assets/food-2.png'
 import NoteApp from './assets/note-3.png'
 import EcomApp from './assets/ecom-2.png'
-import larrow from './assets/l.png'
-import rarrow from './assets/R.png'
+import { BsArrowRight } from 'react-icons/bs';
+import { BsArrowLeft } from "react-icons/bs";
+
 gsap.registerPlugin(ScrollTrigger);
 const Projects = ({scrollContainer}) => {
  const [activeDiv, setActiveDiv] = useState(1);
@@ -44,43 +45,6 @@ const typeRef = useRef();
           }}
         >
           <div className="proj-slide">
-            <div className="proj-ainer">
-            <div className="proj-box">
-      <div className="proj-img"
-      style={{ backgroundImage: `url(${QuizApp})`,
-      backgroundSize: 'cover',
-    backgroundPosition: 'center', } }>
-      <div className="project-card-btn"> <a href="https://bertquiz.vercel.app/register">Visit now</a><a href="https://github.com/yasraa/quiz-master">source code</a></div>
-      </div>
-      <div className="proj-box-main-content">
-        <h3 className='proj-name'>React Quiz App</h3>
-        <p className='proj-desc'>An interactive quiz app with user auth, quiz type/difficulty selection, timer-based questions, and instant feedback — built with Firebase and Zustand.</p>
-        <div className="proj-labels">
-          <label >React</label><label > Firebase Auth</label><label > React Router DOM</label><br /> <label >Tailwind CSS,</label>
-          <label >Day.js</label><label > Framer Motion</label>
-        </div>
-      </div>
-    </div>
-     <div className="proj-box">
-      <div className="proj-img" style={{ backgroundImage: `url(${FoodApp})`,
-      backgroundSize: 'cover',
-    backgroundPosition: 'center', } }>
-      <div className="project-card-btn"> <a href="https://mern-stack-restaurant-reservation.vercel.app">Visit now</a><a href="https://github.com/yasraa/MERN_STACK_RESTAURANT_RESERVATION-main">source code</a></div>
-    </div>
-      <div className="proj-box-main-content">
-        <h3 className='proj-name'>Restaurant Reservation App</h3>
-        <p className='proj-desc'>A full-stack restaurant reservation system allowing users to explore menu options and reserve tables. Features an animated sliding navbar and seamless form handling backed by a MongoDB database.</p>
-        <div className="proj-labels">
-          <label>React (Vite)</label> <label> Node.js</label> <label> Form Handling</label> <label> React Router DOM</label> <label>MongoDB</label>
-        </div>
-      </div>
-    </div>
-
-
-
-            </div>
-          </div>
-          <div className="proj-slide">
            <div className="proj-ainer">
            
     <div className="proj-box">
@@ -113,24 +77,61 @@ const typeRef = useRef();
     </div> 
             </div>
           </div>
+
+
+            <div className="proj-slide">
+            <div className="proj-ainer">
+
+
+            <div className="proj-box">
+      <div className="proj-img"
+      style={{ backgroundImage: `url(${QuizApp})`,
+      backgroundSize: 'cover',
+    backgroundPosition: 'center', } }>
+      <div className="project-card-btn"> <a href="https://bertquiz.vercel.app/register">Visit now</a><a href="https://github.com/yasraa/quiz-master">source code</a></div>
+      </div>
+      <div className="proj-box-main-content">
+        <h3 className='proj-name'>React Quiz App</h3>
+        <p className='proj-desc'>An interactive quiz app with user auth, quiz type/difficulty selection, timer-based questions, and instant feedback — built with Firebase and Zustand.</p>
+        <div className="proj-labels">
+          <label >React</label><label > Firebase Auth</label><label > React Router DOM</label><br /> <label >Tailwind CSS,</label>
+          <label >Day.js</label><label > Framer Motion</label>
+        </div>
+      </div>
+    </div>
+     <div className="proj-box">
+      <div className="proj-img" style={{ backgroundImage: `url(${FoodApp})`,
+      backgroundSize: 'cover',
+    backgroundPosition: 'center', } }>
+      <div className="project-card-btn"> <a href="https://mern-stack-restaurant-reservation.vercel.app">Visit now</a><a href="https://github.com/yasraa/MERN_STACK_RESTAURANT_RESERVATION-main">source code</a></div>
+    </div>
+      <div className="proj-box-main-content">
+        <h3 className='proj-name'>Restaurant Reservation App</h3>
+        <p className='proj-desc'>A full-stack restaurant reservation system allowing users to explore menu options and reserve tables. Features an animated sliding navbar and seamless form handling backed by a MongoDB database.</p>
+        <div className="proj-labels">
+          <label>React (Vite)</label> <label> Node.js</label> <label> Form Handling</label> <label> React Router DOM</label> <label>MongoDB</label>
+        </div>
+      </div>
+    </div>
+            </div>
+
+
+
+
+          </div>
         </div>
       </div>
 
  <div className="proj-button-container">
         <div className="proj-jjk">
-        <button onClick={() => setActiveDiv(1)}   style={{backgroundImage:`url(${larrow})`,
-        backgroundColor:'transparent',
-         backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    border:'none',
-          }}></button>
-        <button onClick={() => setActiveDiv(2)}  
-            style={{backgroundImage:`url(${rarrow})`,
-             backgroundColor:'transparent',
-             backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    border:'none',
-          }}></button>
+        <button onClick={() => setActiveDiv(1)} 
+          >
+            <BsArrowLeft className='arrows'/>
+          </button>
+        <button onClick={() => setActiveDiv(2)}     
+          >
+         <BsArrowRight className='arrows' />
+          </button>
           </div>
       </div>
 
