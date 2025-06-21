@@ -1,6 +1,5 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './page1-main.css';
 
@@ -17,27 +16,27 @@ const Projects = ({ scrollContainer }) => {
   const [activeDiv, setActiveDiv] = useState(1);
   const sectionRef = useRef();
 
-  useGSAP(() => {
-    console.log("📦 Projects scrollContainer ref:", scrollContainer?.current);
+ useEffect(() => {
     if (!scrollContainer?.current || !sectionRef.current) {
       console.warn("❌ scrollContainer or sectionRef is undefined.");
       return;
     }
 
+    // Defer animation until DOM is fully rendered
     setTimeout(() => {
       gsap.from(sectionRef.current, {
+        opacity: 0,
+        y: 50,
+        duration: 1.5,
         scrollTrigger: {
           trigger: sectionRef.current,
           scroller: scrollContainer.current,
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
-        opacity: 0,
-        y: 40,
-        duration: 1.5,
-        ease: "power3.out"
+          start: 'top 80%',
+          toggleActions: 'play none none none',
+          // markers: true, // Enable only for debugging
+        }
       });
-    }, 100);
+    }, 200);
   }, [scrollContainer]);
 
   return (
