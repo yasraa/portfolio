@@ -18,6 +18,7 @@ import mongodbimg from './assets/mongo.png';
 import gsappimg from './assets/gsapp.png';
 
 gsap.registerPlugin(ScrollTrigger);
+console.log("ScrollTrigger loaded");
 ScrollTrigger.defaults({ markers: true });
 function Education({scrollContainer}) {
   const [activeDiv, setActiveDiv] = useState(1);
