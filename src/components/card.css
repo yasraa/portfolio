@@ -1,15 +1,16 @@
 
 
 .sidesticky{
-    position: sticky; /* Makes the div sticky */
-    top: 0;           /* Keeps it at the top as you scroll */
-    height: 100vh;    /* Full viewport height */
+    position: sticky; 
+    top: 0;          
+    height: 100vh;   
     z-index: 10;   
     width: 25vw;
     display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
+ 
   }
 
 
@@ -93,7 +94,7 @@ font-size: 30px;
     width: 100%;
 }
 .social-link ul a:hover {
-  transform: translateY(-5px); /* Moves the button upward by 5px */
+  transform: translateY(-5px); 
 }
 
 
@@ -136,15 +137,13 @@ font-size: 30px;
         padding: 10px 0px;
 }
 
-@media (max-height: 768px) {
-   
 
-}
+
 
 @media (max-width:600px){
     .sidesticky{
         position: relative;
-        padding-top: 0px;
+        padding: 10px 0px;
         width: 100vw;
         height: 100vh;
         display: flex;
@@ -172,5 +171,45 @@ font-size: 30px;
     .social-link {
         margin-top: 20px;
         height: max-content;
+    }
+}
+@media (max-height: 750px) {
+    .sidesticky{
+        padding: 0px;
+    }
+    .cardm{
+        width: 72vw;
+    }
+   .cardm img{
+  height: 200px;
+   }
+  
+}
+@media (max-width: 347px){
+.name{
+    font-size: 28px;
+        line-height: 33px;
+}
+}
+@media (max-height: 684px){
+    .h-5{
+        margin-top: 5px;
+    }
+ .social-link{
+    padding: 0px;
+   }
+}
+@media (max-height: 684px){
+    .name{
+        padding: 0px;
+    }
+    .cardm{
+        width: 68vw;
+    }
+        .cardm img {
+        height: 165px;
+    }
+    .btn-card{
+        height: 30px;
     }
 }

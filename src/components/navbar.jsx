@@ -77,13 +77,13 @@ const Navbar = () => {
               <button onClick={() => scrollToSection("section1")}>About me</button>
             </li>
             <li>
-              <button onClick={() => scrollToSection("section2")}>Experience</button>
+              <button onClick={() => scrollToSection("section2")}>Tech Stack</button>
             </li>
             <li>
               <button onClick={() => scrollToSection("section3")}>Projects</button>
             </li>
             <li>
-              <button onClick={() => scrollToSection("section4")}>Reviews</button>
+              <button onClick={() => scrollToSection("section4")}>Services</button>
             </li>
           </ul>
         </div>
