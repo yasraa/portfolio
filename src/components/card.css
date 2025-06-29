@@ -21,9 +21,8 @@
     color: rgb(248, 245, 250);
   width: 75%   ;
     background-color: #3c3b39;
-    display: grid;
-    
-    grid-template-rows: min-content;
+   display: flex;
+   flex-direction: column;
     gap: 8px;
     border-radius: 20px;
     padding: 29px 29px;
@@ -170,8 +169,11 @@ margin-top: 23px;
        height: fit-content;
     }
     .social-link {
-        margin-top: 20px;
+        margin-top: 0px;
         height: max-content;
+    }
+    .c-d{
+        margin-bottom: 0px;
     }
 }
 
