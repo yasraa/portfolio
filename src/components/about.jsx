@@ -22,7 +22,7 @@ const About = () => {
 
   return (
     <div className="about-me">
-      <div id="section1">
+      <div id="section1" className='sect'>
         <h2 className="main-para">
         <div className="type-effect" ref={typeRef}></div>
           <br />

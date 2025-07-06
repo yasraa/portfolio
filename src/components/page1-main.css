@@ -6,7 +6,7 @@
   color: transparent;
   -webkit-background-clip: text;
   margin-left: 43px;
-  padding-top: 173px;
+ 
   font-weight: bold;
 }
 
@@ -36,9 +36,17 @@
 }
 
 .about-me {
-  height: 100vh
+  height: 100vh;
+  padding-bottom: 49px;
 }
-
+.sect{
+      height: 100%;
+    display: flex
+;
+    flex-direction: column;
+  
+    justify-content: end;
+}
 .hiddencard {
   display: none;
   width: 100%;
@@ -342,7 +350,8 @@ display: none;
 
 .kkj p {
   font-size: 16px;
-  color:  rgb(154, 201, 255);
+  color: #f0d2f994;
+ 
   margin-right: 26px;
   margin-top: 5px;
   width: 100%;
@@ -387,8 +396,8 @@ display: none;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  font-size: 32px;
-  font-weight: 200;
+  font-size: 35px;
+  
   width: 200px;
 }
 
@@ -464,7 +473,7 @@ button {
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
-  font-size: 32px;
+  font-size: 35px;
   padding-bottom: 30px;
   width: 350px;
 }
@@ -482,11 +491,11 @@ button {
 
 .sides h2 {
   color: rgb(240, 210, 249);
-  background: linear-gradient(90deg, rgba(240, 210, 249, 1) 27%, rgb(154, 201, 255) 54%, rgba(213, 220, 255, 1) 100%);
+  background: linear-gradient(90deg, rgba(240, 210, 249, 1) 27%, rgb(174, 209, 248) 54%, rgba(213, 220, 255, 1) 100%);
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
-  font-size: 22px;
+  font-size: 25px;
   margin-bottom: 10px;
   text-transform: capitalize;
 }
@@ -524,8 +533,9 @@ button {
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
-  font-size: 32px;
+  font-size: 35px;
   padding-bottom: 20px;
+  font-weight: 600;
  
 }
 
@@ -600,11 +610,12 @@ form {
   }
 .contact{
   height: 110vh;
-  padding-top: 20px;
+  padding-top: 33px;
 }
   .contact p {
-    font-size: 37px;
+    
     padding: 16px 38px;
+    text-align: center;
   }
 
   .slider-container {
@@ -896,5 +907,8 @@ width: 100%;
 }
 .proj-button-container{
   display: none;
+}
+.kkj p{
+   color:  rgb(154, 201, 255);
 }
 }

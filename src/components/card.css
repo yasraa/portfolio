@@ -54,9 +54,7 @@ font-size: 30px;
     padding-top: 10px;
  height: fit-content;
   
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+  
  
    padding-bottom: 13px;
    
@@ -167,6 +165,9 @@ margin-top: 18px;
     .abt-me {
        font-size: 1.2rem;
        height: fit-content;
+        display: flex;
+   flex-direction: column;
+   justify-content: center;
     }
     .social-link {
         margin-top: 0px;
