@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './page1-main.css';
 
-import QuizApp from './assets/quiz-2.png';
+import Velmure from './assets/velmure.png';
 import FoodApp from './assets/food-2.png';
 import NoteApp from './assets/note-3.png';
 import EcomApp from './assets/ecom-2.png';
@@ -62,12 +62,12 @@ const Projects = ({ scrollContainer }) => {
                 code="https://github.com/yasraa/react-notes-app-main"
               />
               <ProjectCard
-                img={EcomApp}
-                name="E-commerce Website"
-                desc="An e-commerce frontend with modals, dropdowns, and search bar. Perfect for showcasing products."
-                tech={['HTML', 'CSS', 'JavaScript']}
-                visit="https://aroneshop.netlify.app"
-                code="https://github.com/yasraa/ecommerce-website"
+                img={Velmure}
+                name="Velmure"
+                desc="Built Velmure, a full-stack MERN eCommerce app with authentication, admin product management, and responsive UI using Tailwind CSS and Multer."
+                tech={['React', 'Firebase', 'Tailwind', 'Framer Motion']}
+                visit="https://frontend-nine-sooty-89.vercel.app/"
+                code="https://github.com/yasraa/velmure"
               />
             </div>
           </div>
@@ -75,13 +75,13 @@ const Projects = ({ scrollContainer }) => {
           {/* Slide 2 */}
           <div className="proj-slide">
             <div className="proj-ainer">
-              <ProjectCard
-                img={QuizApp}
-                name="React Quiz App"
-                desc="A quiz app with user auth, type/difficulty options, timer, and instant results using Zustand and Firebase."
-                tech={['React', 'Firebase', 'Tailwind', 'Framer Motion']}
-                visit="https://bertquiz.vercel.app/register"
-                code="https://github.com/yasraa/quiz-master"
+             <ProjectCard
+                img={EcomApp}
+                name="E-commerce Website"
+                desc="An e-commerce frontend with modals, dropdowns, and search bar. Perfect for showcasing products."
+                tech={['HTML', 'CSS', 'JavaScript']}
+                visit="https://aroneshop.netlify.app"
+                code="https://github.com/yasraa/ecommerce-website"
               />
               <ProjectCard
                 img={FoodApp}
