@@ -24,10 +24,10 @@ const About = () => {
     <div className="about-me">
       <div id="section1" className='sect'>
         <h2 className="main-para">
-        <div className="type-effect" ref={typeRef}></div>
+          <div className="type-effect" ref={typeRef}></div>
           <br />
           <div className="for-space">
-          MERN Stack Developer and <br /> Full-Stack Engineer
+            Full-Stack Developer Focused  <br /> on Performance & UX
           </div>
         </h2>
         <p>
