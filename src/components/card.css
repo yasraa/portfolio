@@ -4,16 +4,16 @@
     position: sticky; /* Makes the div sticky */
     top: 0;           /* Keeps it at the top as you scroll */
     height: 100vh;    /* Full viewport height */
-    position: sticky; 
-    top: 0;          
-    height: 100vh;   
-    z-index: 10;   
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    z-index: 10;
     width: 25vw;
     display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
- 
+
   }
 
 .cardm {
@@ -32,7 +32,7 @@
     letter-spacing: 1.5px;
     font-weight: 550;
     line-height: 33px;
-font-size: 30px;
+font-size: 23px;
 }
 
 .name {
@@ -46,24 +46,22 @@ font-size: 30px;
     height: 210px;
     width: 100%;
     border-radius: 20px;
-   
+
     object-fit: cover;
 }
 
 .abt-me {
     padding-top: 10px;
  height: fit-content;
-  
-  
- 
    padding-bottom: 13px;
-   
+
 }
 
 .f-d {
-    font-size: 23px;
+    font-size: 20px;
     letter-spacing: 1px;
     font-weight: 500;
+    margin: 4px 0px;
 }
 
 .h-5 {
@@ -72,7 +70,7 @@ font-size: 30px;
 }
 
 .u-d {
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .c-d {
@@ -87,13 +85,13 @@ font-size: 30px;
      transition: transform 0.3s ease;
     justify-content: space-between;
     justify-items: center;
-   
+
     height: 36px;
     align-items: end;
     width: 100%;
 }
 .social-link ul a:hover {
-  transform: translateY(-5px); 
+  transform: translateY(-5px);
 }
 
 
@@ -114,7 +112,7 @@ font-size: 30px;
     justify-content: center;
     align-items: center;
     color: black;
- 
+
 }
 .btn-card:hover{
     cursor: pointer;
@@ -178,7 +176,7 @@ margin-top: 18px;
     }
 }
 
-  
+
 @media (max-width: 380px){
 .cardm h1{
     font-size: 34px;
